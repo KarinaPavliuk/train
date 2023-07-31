@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "eslint": "^8.36.0"
-  }
+  },
+  "name": "train",
+  "description": "",
+  "version": "1.0.0",
+  "main": "lesson1.js",
+  "devDependencies": {
+    "prettier": "3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

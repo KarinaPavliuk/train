@@ -1,0 +1,10 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "prettier.bracketSameLine": true,
+  "prettier.enableDebugLogs": true,
+  "prettier.singleAttributePerLine": true,
+  "prettier.withNodeModules": true,
+  "prettier.resolveGlobalModules": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

@@ -1,11 +1,11 @@
-// //CRUD
+//CRUD
 
-// //R - GET
-// // fetch("https://jsonplaceholder.typicode.com/posts/1")
-// //   .then((response) => response.json())
-// //   .then((json) => console.log("json", json));
+//R - GET
+// fetch("https://jsonplaceholder.typicode.com/posts/1")
+//   .then((response) => response.json())
+//   .then((json) => console.log("json", json));
 
-// //C - POST
+//C - POST
 // const options = {
 //   method: "POST",
 //   body: JSON.stringify({
@@ -54,7 +54,7 @@ function handlerFormSubmit(evt) {
 
   addPostService(data)
     .then((obj) =>
-      listPosts.insertAdjacentHTML("beforeend", createPostMarkup(obj))
+      listPosts.insertAdjacentHTML("beforeend", createPostMarkup(obj)),
     )
     .catch(() => (errMessage.innerHTML = "Не можливо додати пост"))
     .finally(() => {
@@ -84,6 +84,43 @@ function addPostService(data) {
         throw new Error(resp.statusText);
       }
       return resp.json();
-    }
+    },
   );
 }
+
+//U PUT PATCH
+
+// const options = {
+//   method: "PUT",
+//   body: JSON.stringify({
+//     id: 1,
+//     title: "cat",
+//   }),
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// };
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', options)
+//   .then(resp => resp.json()).then(data => console.log(data))
+
+// const options = {
+//   method: "PATCH",
+//   body: JSON.stringify({
+//     id: 1,
+//     title: "cat",
+//   }),
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// };
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', options)
+//   .then(resp => resp.json()).then(data => console.log(data))
+
+// const options = {
+//   method: "DELETE",
+// };
+
+// fetch('https://jsonplaceholder.typicode.com/posts/1', options)
+//   .then(resp => console.log(resp))
