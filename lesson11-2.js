@@ -1,3 +1,56 @@
+//Вебінар за 06.08
+
+// Function declaration
+// serviceCountry();
+// async function serviceCountry() {
+//   const response = await fetch("https://restcountries.com/v3.1/name/Ukraine");
+//   const data = await response.json();
+// }
+
+// Function expression
+// const serviceCountry = async function () {
+//   const response = await fetch("https://restcountries.com/v3.1/name/Ukraine");
+//   const data = await response.json();
+// }
+
+// Arrow function
+// const serviceCountry = async = () => {
+//   const response = await fetch('https://restcountries.com/v3.1/name/Ukraine');
+//   const data = await response.json();
+// }
+
+//Object async method
+// const country = {
+//   capital: null,
+//   async serviceCountry() {
+//     const response = await fetch("https://restcountries.com/v3.1/name/Ukraine");
+//     const data = await response.json();
+//     console.log(data);
+//   },
+// };
+
+// country.serviceCountry();
+
+//Class async method
+// class Country {
+//   constructor(country) {
+//     this.country = country;
+//   }
+
+//   async serviceCountry() {
+//     const response = await fetch(
+//       `https://restcountries.com/v3.1/name/${this.country}`,
+//     );
+//     const data = await response.json();
+//     console.log(data);
+//   }
+// }
+
+// const poland = new Country("Poland");
+// poland.serviceCountry();
+
+//Вебінар за 26.04
+
 // // 'https://restcountries.com/v3.1/name/'
 
 // // async function getCapital() {
